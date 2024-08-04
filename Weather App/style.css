@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(97, 97, 121);
+}
+
+.container{
+    width: 400px;
+    height: min-content;
+    background-color: #ffff;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.search-box>input{
+    width: 84%;
+    font-size: 20px;
+    text-transform:capitalize;
+    color: black;
+    background-color: rgb(230, 239, 247);
+    padding: 12px 16px;
+    border-radius: 14px;
+
+}
+
+.search-box>input::placeholder{
+    color: black;
+}
+
+.search-box>button{
+    width: 50px;
+    height: 46px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background-color: rgb(230, 239, 247);
+    font-size:25px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-box>button:hover{
+    background-color: grey;
+    color: white;
+}
+
+.weather-body>img{
+    width: 60%;
+    margin-left: 70px;
+}
+
+.weather-box{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.weather-box .temperature>sup{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+.weather-detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 20px;
+
+}
+
+.wind {
+    margin-right: 20px;
+
+}
+
+.weather-detail img{
+    font-size: 36px;
+}
+
+.weather-detail .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.text span{
+    font-size: 20px;
+    font-weight: 700px;
+}
